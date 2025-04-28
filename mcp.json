@@ -1,0 +1,46 @@
+{
+    "name": "stock-limit-up",
+    "version": "1.0.0",
+    "description": "获取涨停股票信息的MCP插件",
+    "author": "cursor",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/YOUR_USERNAME/stock-limit-up"
+    },
+    "main": "index.js",
+    "type": "node",
+    "commands": {
+        "zt": {
+            "name": "涨停股票",
+            "description": "获取涨停股票信息",
+            "command": "uvx",
+            "args": [
+                {
+                    "name": "date",
+                    "description": "查询日期，格式：YYYYMMDD，默认为当天",
+                    "required": false,
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "description": "显示类型：all-全部信息，simple-简要信息，stats-仅统计信息",
+                    "required": false,
+                    "default": "all"
+                }
+            ]
+        }
+    },
+    "requirements": {
+        "node": ">=14.0.0",
+        "python": ">=3.7",
+        "pip": [
+            "akshare==1.11.22",
+            "pandas==2.0.3"
+        ]
+    },
+    "install": {
+        "scripts": [
+            "pip install akshare==1.11.22 pandas==2.0.3"
+        ]
+    }
+} 

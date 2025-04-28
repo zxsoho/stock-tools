@@ -1,0 +1,16 @@
+{
+    "name": "stock-limit-up",
+    "version": "1.0.0",
+    "description": "获取涨停股票信息的MCP插件",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {},
+    "python": {
+        "dependencies": {
+            "akshare": "1.11.22",
+            "pandas": "2.0.3"
+        }
+    }
+} 
